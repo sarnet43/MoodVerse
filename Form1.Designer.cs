@@ -51,6 +51,7 @@
             this.groupBox1.Controls.Add(this.btnResult);
             this.groupBox1.Controls.Add(this.tbMood);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox1.Location = new System.Drawing.Point(14, 31);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(372, 403);
@@ -61,6 +62,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.tbResult);
+            this.groupBox2.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox2.Location = new System.Drawing.Point(392, 31);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(399, 402);
@@ -71,27 +73,33 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.ForeColor = System.Drawing.SystemColors.MenuText;
             this.label1.Location = new System.Drawing.Point(34, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(241, 12);
+            this.label1.Size = new System.Drawing.Size(263, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "오늘 당신의 기분은? (예 : 행복, 우울, 화남)";
             // 
             // tbMood
             // 
+            this.tbMood.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.tbMood.Location = new System.Drawing.Point(47, 65);
             this.tbMood.Name = "tbMood";
-            this.tbMood.Size = new System.Drawing.Size(286, 21);
+            this.tbMood.Size = new System.Drawing.Size(286, 29);
             this.tbMood.TabIndex = 1;
             // 
             // btnResult
             // 
+            this.btnResult.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnResult.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnResult.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnResult.Location = new System.Drawing.Point(26, 319);
             this.btnResult.Name = "btnResult";
             this.btnResult.Size = new System.Drawing.Size(319, 67);
             this.btnResult.TabIndex = 2;
             this.btnResult.Text = "오늘의 한 줄 문학 보기";
-            this.btnResult.UseVisualStyleBackColor = true;
+            this.btnResult.UseVisualStyleBackColor = false;
             // 
             // tbResult
             // 
@@ -103,12 +111,13 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.파일ToolStripMenuItem,
             this.도움말ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 25);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -160,6 +169,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

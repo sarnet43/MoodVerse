@@ -24,12 +24,14 @@ namespace MoodVerse
 
         private void 내역목록보기ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormHistory form = new FormHistory();
+            form.Show();
         }
 
         private void moodVerse정보ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormAbout form = new FormAbout();
+            form.ShowDialog();
         }
     }
 }
