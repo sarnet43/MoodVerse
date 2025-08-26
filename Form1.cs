@@ -16,5 +16,20 @@ namespace MoodVerse
         {
             InitializeComponent();
         }
+
+        private void 끝내기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void 내역목록보기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void moodVerse정보ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
