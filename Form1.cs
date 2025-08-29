@@ -56,7 +56,7 @@ namespace MoodVerse
             }
             else
             {
-                form = new FormHistory();
+                form = new FormHistory(this);
                 form.Show();
             }
         }
@@ -102,6 +102,20 @@ namespace MoodVerse
             Random rand = new Random();
             int index = rand.Next(0, results.Count);
             return results[index];
+        }
+
+        public void LoadHistory(string history)
+        {
+            string mood = history.Split('|')[0].Split(' ')[0];
+            tbMood.Text = mood;
+
+            string verse = history.Split('|')[1];
+            string message = history.Split('|')[2];
+
+            tbResult.Text = $"{mood}{Environment.NewLine}"
+                                + $"{verse}{Environment.NewLine}" +
+                                $"{message}";
+
         }
     }
 }

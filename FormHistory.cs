@@ -16,8 +16,9 @@ namespace MoodVerse
         List<string> history;
         Form1 form1;
 
-        public FormHistory()
+        public FormHistory(Form1 form)
         {
+            this.form1 = form;
             InitializeComponent();
             LoadHistory();
         }
@@ -54,6 +55,12 @@ namespace MoodVerse
         private void button1_Click(object sender, EventArgs e)
         {
             UpdateHistory();
+        }
+
+        private void lbHistory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string message = history[lbHistory.SelectedIndex];
+            form1.LoadHistory(message);
         }
     }
 }
