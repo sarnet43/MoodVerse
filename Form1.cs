@@ -73,8 +73,8 @@ namespace MoodVerse
             string result = GetMoodResponse(mood);
             string verse = result.Split('|')[0];
             string message = result.Split('|')[1];
-            tbResult.Text = $"{mood}{Environment.NewLine}"
-                                + $"{verse}{Environment.NewLine}" +
+            tbResult.Text = $"{mood}{Environment.NewLine}{Environment.NewLine}"
+                                + $"{verse}{Environment.NewLine}{Environment.NewLine}" +
                                 $"{message}";
 
             saveHistory($"{mood}|{result}");
@@ -112,8 +112,8 @@ namespace MoodVerse
             string verse = history.Split('|')[1];
             string message = history.Split('|')[2];
 
-            tbResult.Text = $"{mood}{Environment.NewLine}"
-                                + $"{verse}{Environment.NewLine}" +
+            tbResult.Text = $"{mood}{Environment.NewLine}{Environment.NewLine}"
+                                + $"{verse}{Environment.NewLine} {Environment.NewLine}" +
                                 $"{message}";
 
         }
