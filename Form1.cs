@@ -78,6 +78,11 @@ namespace MoodVerse
                                 $"{message}";
 
             saveHistory($"{mood}|{result}");
+            FormHistory form = Application.OpenForms["FormHistory"] as FormHistory;
+            if(form != null)
+            {
+                form.UpdateHistory();
+            }
         }
 
         private void saveHistory(string history)
