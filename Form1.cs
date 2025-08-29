@@ -47,8 +47,12 @@ namespace MoodVerse
         {
             string mood = tbMood.Text.Trim();
             string result = GetMoodResponse(mood);
-            string verse = result.Split()[0];
-            tbResult.Text = $"{mood}{Environment.NewLine}";
+            string verse = result.Split('|')[0];
+            string message = result.Split('|')[1];
+            tbResult.Text = $"{mood}{Environment.NewLine}"
+                                + $"{verse}{Environment.NewLine}" +
+                                $"{message}";
+            
         }
 
         private string GetMoodResponse(string mood)
