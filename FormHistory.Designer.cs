@@ -28,29 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.lbHistory = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // button1
+            // btnRefresh
             // 
-            this.button1.BackColor = System.Drawing.Color.SeaGreen;
-            this.button1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(606, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 38);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "새로고침";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnRefresh.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnRefresh.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnRefresh.Location = new System.Drawing.Point(606, 12);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(182, 38);
+            this.btnRefresh.TabIndex = 0;
+            this.btnRefresh.Text = "새로고침";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.button1_Click);
             // 
-            // listBox1
+            // lbHistory
             // 
-            this.listBox1.BackColor = System.Drawing.Color.Ivory;
-            this.listBox1.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.listBox1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Items.AddRange(new object[] {
+            this.lbHistory.BackColor = System.Drawing.Color.Ivory;
+            this.lbHistory.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbHistory.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lbHistory.FormattingEnabled = true;
+            this.lbHistory.ItemHeight = 25;
+            this.lbHistory.Items.AddRange(new object[] {
             "행복",
             "슬픔",
             "우울",
@@ -58,10 +59,10 @@
             "즐거움",
             "신남",
             "기쁨"});
-            this.listBox1.Location = new System.Drawing.Point(12, 66);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(776, 354);
-            this.listBox1.TabIndex = 1;
+            this.lbHistory.Location = new System.Drawing.Point(12, 66);
+            this.lbHistory.Name = "lbHistory";
+            this.lbHistory.Size = new System.Drawing.Size(776, 354);
+            this.lbHistory.TabIndex = 1;
             // 
             // FormHistory
             // 
@@ -69,8 +70,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lbHistory);
+            this.Controls.Add(this.btnRefresh);
             this.Name = "FormHistory";
             this.Text = "내역 불러오기";
             this.ResumeLayout(false);
@@ -79,7 +80,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.ListBox lbHistory;
     }
 }
